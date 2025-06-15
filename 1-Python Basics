@@ -55,3 +55,9 @@ for i in range (1,101):
 96
 98
 100
+
+#Concatenate a string using multiplication and addition (e.g., "AI"*3 + " is awesome").
+result = "NI" * 2 + " Lakshmi"
+print(result)
+#Output
+NINI Lakshmi
