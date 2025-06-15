@@ -61,3 +61,9 @@ result = "NI" * 2 + " Lakshmi"
 print(result)
 #Output
 NINI Lakshmi
+
+#Write a one-liner that prints a message using formatted strings.
+result = (f"{'Nikitha'} is {'awesome!'}")
+print(result)
+#Output
+Nikitha is awesome!
