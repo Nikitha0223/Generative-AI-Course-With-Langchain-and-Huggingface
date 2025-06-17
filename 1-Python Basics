@@ -35,3 +35,26 @@ Float : 1.0 <class 'float'>
 String : Nikitha <class 'str'>
 Integer : 2 <class 'int'>
 List : [1, 2, 3, 4] <class 'list'>
+
+#Create a list of your favorite tech stacks and print them one by one using a loop.
+stacks=["Sap abap + Sap hana" , "React js + Node js" , "Artificial Intelligence"]
+print("My favorite tech stacks :")
+for i in stacks:
+    print("- " + i)
+#Output
+My favorite tech stacks :
+- Sap abap + Sap hana
+- React js + Node js
+- Artificial Intelligence
+
+#Write a Python script to count the number of vowels in a given string.
+text=input("Enter the text :")
+vowels = "aeiouAEIOU"
+count=0
+for v in text:
+    if v in vowels:
+        count += 1
+print("The vowels in the given text :",count)
+#Output
+Enter the text :hello world&
+The vowels in the given text : 3
