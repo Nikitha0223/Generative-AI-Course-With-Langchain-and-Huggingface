@@ -1,7 +1,94 @@
-#1.Syntax and Semantics
+#Loops
+#Print the multiplication table of any number given by the user.
+a=int(input("Enter the number : "))
+result=0
+for i in range(1,11):
+    result=a*i
+    print(f"{a} *  {i} = {result} ")
+#Output
+Enter the number : 2
+2 *  1 = 2 
+2 *  2 = 4 
+2 *  3 = 6 
+2 *  4 = 8 
+2 *  5 = 10 
+2 *  6 = 12 
+2 *  7 = 14 
+2 *  8 = 16 
+2 *  9 = 18 
+2 *  10 = 20 
 
-#Write a Python script that prints the even numbers from 1 to 100.
-for i in range (1,101):
+#Reverse a string using a loop.
+text = input("Enter a string: ")
+reversed_text = ""
+for char in text:
+    reversed_text = char + reversed_text
+print("Reversed string:", reversed_text)
+#Output
+Enter a string: nikitha
+Reversed string: ahtikin
+
+#Calculate the factorial of a number using both for and while loops.
+num = int(input("Enter a number for factorial (for loop): "))
+fact = 1
+for i in range(1, num + 1):
+    fact *= i
+print("Factorial using for loop:", fact)
+#while
+num = int(input("Enter a number for factorial (while loop): "))
+fact = 1
+i = 1
+while i <= num:
+    fact *= i
+    i += 1
+print("Factorial using while loop:", fact)
+#Output:
+Enter a number for factorial (for loop): 5
+Factorial using for loop: 120
+Enter a number for factorial (while loop): 3
+Factorial using while loop: 6
+
+#Print the first n Fibonacci numbers using a loop.
+n = int(input("Enter how many Fibonacci numbers to print: "))
+a, b = 0, 1
+count = 0
+print("Fibonacci sequence:")
+while count < n:
+    print(a, end=" ")
+    a, b = b, a + b
+    count += 1
+#Output
+Enter how many Fibonacci numbers to print: 4
+Fibonacci sequence:
+0 1 1 2 
+
+#Calculate the factorial of a number using a while loop.
+a=int(input("Enter the number : "))
+i=1
+result=1
+while i<=a:
+    result = result*i
+    i+=1
+print(result)
+#Output:
+Enter the number : 5
+120
+
+#Print a right-angled triangle pattern using asterisks (*).
+a = int(input("Enter the number : "))
+i=1
+while i<=a:
+    print("*"*i)
+    i+=1
+#Output:
+Enter the number : 4
+*
+**
+***
+****
+
+#Print all even numbers between 1 and 100 using a loop.
+for i in range(1,101):
     if i%2==0:
         print(i)
 #Output:
@@ -55,16 +142,3 @@ for i in range (1,101):
 96
 98
 100
-print("New line added")
-
-#Concatenate a string using multiplication and addition (e.g., "AI"*3 + " is awesome").
-result = "NI" * 2 + " Lakshmi"
-print(result)
-#Output
-NINI Lakshmi
-
-#Write a one-liner that prints a message using formatted strings.
-result = (f"{'Nikitha'} is {'awesome!'}")
-print(result)
-#Output
-Nikitha is awesome!
