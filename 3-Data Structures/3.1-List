@@ -1,0 +1,38 @@
+#Create a list of your 5 favorite colors.
+lst=["Red", "Blue", "White", "Black", "Green"]
+print(type(lst))
+print(lst)
+#Output
+<class 'list'>
+['Red', 'Blue', 'White', 'Black', 'Green']
+
+#Access the third item in a list of fruits.
+fruits_list=["mango", "apple", "Gauva", "Jackfruit"]
+print(fruits_list[2])
+#Output
+Gauva
+#Add "grape" to the fruit list.
+fruits_list.append("grape")
+print(fruits_list)
+#Output
+['mango', 'apple', 'Gauva', 'Jackfruit', 'grape']
+#Remove "apple" from the fruit list.
+fruits_list.remove("apple")
+print(fruits_list)
+#Output
+['mango', 'Gauva', 'Jackfruit', 'grape']
+#Print the length of the fruit list.
+print(len(fruits_list))
+#Output
+4
+
+#Sort a list of numbers in ascending and descending order.
+num=[1,2,3,67,43,56]
+num.sort()
+print(f"The numbers in ascending order are : {num}")
+num.reverse()
+print(f"The numbers in descending order are : {num}")
+#Output
+The numbers in ascending order are : [1, 2, 3, 43, 56, 67]
+The numbers in descending order are : [67, 56, 43, 3, 2, 1]
+
