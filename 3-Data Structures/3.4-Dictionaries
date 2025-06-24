@@ -1,0 +1,53 @@
+student = {"name": "John", "age": 21, "grade": "A"}
+print(student)
+# Output: {'name': 'John', 'age': 21, 'grade': 'A'}
+
+print(student["name"])
+# Output: John
+
+print(student.get("height", "Not found"))
+# Output: Not found
+
+student["email"] = "john@example.com"
+print(student)
+# Output: {'name': 'John', 'age': 21, 'grade': 'A', 'email': 'john@example.com'}
+
+student["grade"] = "A+"
+print(student)
+# Output: {'name': 'John', 'age': 21, 'grade': 'A+', 'email': 'john@example.com'}
+
+student.pop("age")
+print(student)
+# Output: {'name': 'John', 'grade': 'A+', 'email': 'john@example.com'}
+
+for key, value in student.items():
+    print(key, ":", value)
+# Output:
+ name : John
+ grade : A+
+ email : john@example.com
+
+print(student.keys())
+# Output: dict_keys(['name', 'grade', 'email'])
+
+print(student.values())
+# Output: dict_values(['John', 'A+', 'john@example.com'])
+
+classroom = {
+    "student1": {"name": "Alice", "grade": "B"},
+    "student2": {"name": "Bob", "grade": "A"}
+}
+print(classroom["student2"]["name"])
+# Output: Bob
+
+squares = {x: x*x for x in range(1, 4)}
+print(squares)
+# Output: {1: 1, 2: 4, 3: 9}
+
+words = ["ai", "cloud", "ai", "ml"]
+freq = {}
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+print(freq)
+# Output: {'ai': 2, 'cloud': 1, 'ml': 1}
+
