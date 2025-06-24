@@ -1,0 +1,46 @@
+colors = {"red", "green", "blue"}
+print(colors)
+# Output (order may vary): {'green', 'red', 'blue'}
+
+colors.add("yellow")
+print(colors)
+# Output includes 'yellow'
+
+colors.remove("red")
+print(colors)
+# Output does not include 'red'
+
+print("blue" in colors)
+# Output: True
+
+numbers = [1, 2, 2, 3, 4, 4]
+unique = set(numbers)
+print(unique)
+# Output: {1, 2, 3, 4}
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a | b)
+# Output: {1, 2, 3, 4, 5}
+
+print(a & b)
+# Output: {3}
+
+print(a - b)
+# Output: {1, 2}
+
+print(a ^ b)
+# Output: {1, 2, 4, 5}
+
+for color in colors:
+    print(color)
+squares = {x*x for x in range(1, 6)}
+print(squares)
+# Output: {1, 4, 9, 16, 25}
+
+list1 = ["apple", "banana", "cherry"]
+list2 = ["banana", "kiwi", "cherry"]
+common = set(list1) & set(list2)
+print(common)
+# Output: {'banana', 'cherry'}
+
