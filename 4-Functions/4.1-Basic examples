@@ -1,0 +1,63 @@
+#Functions
+def odd_or_even(num):
+    if num%2==0:
+        print(f"{num} is even")
+    else:
+        print(f"{num} is odd")
+odd_or_even(5)
+#Output:
+5 is odd
+
+def add(a,b):
+    print(a+b)
+add(4,12)
+#Output:
+16
+
+def show(name):
+    print(f"Hello {name}! GoodMorning.")
+show('Nikitha')
+#Output:
+Hello Nikitha! GoodMorning.
+def show(name='guest'):
+    print(f"Hello {name}! GoodMorning.")
+show()
+#Output:
+Hello guest! GoodMorning.
+def show(name='guest'):
+    print(f"Hello {name}! GoodMorning.")
+show("Siva")
+#Output:
+Hello Siva! GoodMorning.
+
+def numbers(*num):
+    print(num)
+numbers(1,2,3,"Siva")
+#Output
+(1, 2, 3, 'Siva')
+
+def key_values(**kwargs):
+    for key,value in kwargs.items():
+        print(f"{key} : {value}")
+key_values(name="Krish", age=54, grade='A')
+#Output
+name : Krish
+age : 54
+grade : A
+
+def show_details(*args,**kwargs):
+    print(*args)
+    for key,value in kwargs.items():
+        print (f"{key} : {value}")
+show_details(1,2,3,4,name="nikki",age=23,grade="A")
+#Output:
+1 2 3 4
+name : nikki
+age : 23
+grade : A
+
+def multiply(a,b):
+    print( a*b,a )
+multiply(2,3)
+#Output:
+6 2
