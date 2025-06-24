@@ -36,3 +36,33 @@ print(f"The numbers in descending order are : {num}")
 The numbers in ascending order are : [1, 2, 3, 43, 56, 67]
 The numbers in descending order are : [67, 56, 43, 3, 2, 1]
 
+# Get a sublist of the first three items.
+lst=[1,2,3,9,32,45]
+sub_lst=lst[:3]
+print(sub_lst)
+#Output
+[1, 2, 3]
+
+#Replace the second item in a list with "kiwi".
+fruits=["apple", "banana", "carrot", "mango"]
+fruits.remove("banana")
+fruits.insert(1,"kiwi")
+print(fruits)
+#Output
+['apple', 'kiwi', 'carrot', 'mango']
+#Check if "apple" is in the list and print a message.
+if "apple" in fruits:
+    print("An apple a day keeps the doctor away!")
+#Output
+An apple a day keeps the doctor away!
+
+#Combine two lists using + and .extend()
+lst1=[1,2,3,4]
+lst2=[5,6,7,8]
+lst3=lst1 + lst2
+print(lst3)
+lst1.extend(lst2)
+print(lst1)
+#output
+[1, 2, 3, 4, 5, 6, 7, 8]
+[1, 2, 3, 4, 5, 6, 7, 8]
