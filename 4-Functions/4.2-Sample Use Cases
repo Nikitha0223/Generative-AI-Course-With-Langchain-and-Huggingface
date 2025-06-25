@@ -1,0 +1,81 @@
+#Temperature Conversion
+def convert_temperature(temp,unit):
+    if unit == 'C':
+        return temp*9/5+32
+    elif unit == 'F':
+        return (temp-32)*5/9
+    else:
+        return None
+print(convert_temperature(25,'C'))
+print(convert_temperature(77,'F'))
+#Output:
+77.0
+25.0
+
+#Password Strength Checker
+def is_strong_password(password):
+    if len(password)<8:
+        return False
+    if not any(char.isdigit() for char in password):
+        return False
+    if not any(char.islower() for char in password):
+        return False
+    if not any(char.isupper() for char in password):
+        return False
+    if not any(char in '!@#$%^&*()_-=+~`' for char in password):
+        return False
+    return True
+print(is_strong_password("veer@rty2"))
+print(is_strong_password("Veer~1234"))
+#Output:
+False
+True
+
+#Calculate the total cost of the items in the shopping cart.
+def calculate_total_cost(cart):
+    total_cost=0
+    for item in cart:
+        total_cost+=item['price'] * item['quantity']
+    return total_cost
+cart = [
+    {"name" : "Banana", "price" : 0.5 , "quantity" : 4},
+    {"name" : "Apple", "price" : 0.3 , "quantity" : 6},
+    {"name" : "Mango", "price" : 0.7 , "quantity" : 3},
+    ]
+#total_cost=calculate_total_cost(cart)
+print(calculate_total_cost(cart))
+#Output:
+5.8999999999999995
+
+#Check if a string is a palindrome 
+def is_palindrome(s):
+    s=s.lower().replace(" ","")
+    return s==s[::-1]
+print(is_palindrome("abay"))
+print(is_palindrome("aka"))
+print(is_palindrome("A man a plan a canal panama"))
+#Output:
+False
+True
+True
+
+#Calculate factors of a number using recursion
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return n*factorial(n-1)
+print(factorial(5))
+#Output:
+120
+
+#Validating the email address
+import re
+def is_valid_email(email):
+    pattern=r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+    return re.match(pattern,email) is not None
+print(is_valid_email('test@example.com'))
+print(is_valid_email('nikitha&mail.com'))
+#Output:
+True
+False
