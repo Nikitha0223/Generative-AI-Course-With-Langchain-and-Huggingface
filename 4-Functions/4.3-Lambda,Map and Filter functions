@@ -1,0 +1,61 @@
+addition=lambda a,b:a+b
+print(addition(2,3))
+#Output
+5
+
+even=lambda a : a%2==0
+print(even(6))
+#Output
+True
+
+addition = lambda x,y,z : x+y+z
+print(addition(1,4,6))
+#Output
+11
+
+n=[1,2,3,4,5,6,7,8]
+square_number = list(map(lambda n : n*n,n))
+print(square_number)
+#Output
+[1, 4, 9, 16, 25, 36, 49, 64]
+
+n1=[1,2,3,4]
+n2=[5,6,7,8]
+added_numbers=list(map(lambda x,y:x+y,n1,n2))
+print(added_numbers)
+#Output
+[6, 8, 10, 12]
+
+n=['1','2','3','4','5']
+integers=list(map(int,n))
+print(integers)
+#Output
+[1, 2, 3, 4, 5]
+
+n=["apple","banana","cherry"]
+fruits=list(map(str.upper,n))
+print(fruits)
+#Output
+['APPLE', 'BANANA', 'CHERRY']
+
+n=[1,2,3,4,5]
+greater_than_five=list(filter(lambda n:n>2,n))
+print(greater_than_five)
+#Output
+[3, 4, 5]
+
+n=[1,2,3,4,5]
+even_and_greaterthanone=list(filter(lambda n:n%2==0 and n>1,n))
+print(even_and_greaterthanone)
+#Output
+[2, 4]
+
+people = [
+    {'name' : 'Nikitha' , 'age' : 23},
+    {'name' : 'Lakshmi' , 'age' : 12}]
+def age_greaterthan_20(person):
+    return person['age']>20
+lst=list(filter(age_greaterthan_20,people))
+print(lst)
+#Output
+[{'name': 'Nikitha', 'age': 23}]
