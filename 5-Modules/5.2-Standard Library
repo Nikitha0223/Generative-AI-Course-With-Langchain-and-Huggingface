@@ -1,0 +1,96 @@
+import array
+arr=array.array('i',[1,2,3,4,5,6])
+print(arr)
+#Output
+array('i', [1, 2, 3, 4, 5, 6])
+
+import math
+print(math.sqrt(16))
+print(math.pi)
+#Output
+4.0
+3.141592653589793
+
+import random
+print(random.randint(1,10))
+print(random.choice(['apple' , 'banana' , 'cherry']))
+#Output
+7
+banana
+
+import math
+import random
+print(math.sqrt(16))
+a=math.sqrt(9)
+print(a)
+print(random.randint(1,5))
+print(random.choice(['Siva' , 'Nikitha' , 'Veer'])
+#Output
+4.0
+3.0
+2
+Nikitha
+
+#dataserialization
+import json
+data={'Name':'Nikitha', 'age':23}
+json_str=json.dumps(data)
+print(json_str)
+print(type(json_str))
+
+parsed_data=json.loads(json_str)
+print(parsed_data)
+print(type(parsed_data))
+#Output
+{"Name": "Nikitha", "age": 23}
+<class 'str'>
+{'Name': 'Nikitha', 'age': 23}
+<class 'dict'>
+
+#dataserialization
+import json
+data={'Name':'Veer','Age':1,'Gender':'M'}
+print(data)
+print(type(data))
+
+data_str=json.dumps(data)
+print(data_str)
+print(type(data_str))
+
+data_dict=json.loads(data_str)
+print(data_dict)
+print(type(data_dict))
+#Output
+{'Name': 'Veer', 'Age': 1, 'Gender': 'M'}
+<class 'dict'>
+{"Name": "Veer", "Age": 1, "Gender": "M"}
+<class 'str'>
+{'Name': 'Veer', 'Age': 1, 'Gender': 'M'}
+<class 'dict'>
+
+from datetime import datetime,timedelta
+now=datetime.now()
+print(now)
+#yesterdays time
+yesterday=now-timedelta(days=2)
+print(yesterday)
+#Output
+2025-06-29 02:32:54.884132
+2025-06-27 02:32:54.884132
+
+import time
+print(time.time())
+time.sleep(2)
+print(time.time())
+#Output
+1751164537.6999028
+1751164539.7000887
+
+#Regular expression
+import re
+pattern=r'\d+'
+text="Nikitha is 23 years old and having an 1 year raghuveer"
+match=re.search(pattern,text)
+print(match.group())
+#Output
+23
